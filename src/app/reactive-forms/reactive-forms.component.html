@@ -1,0 +1,9 @@
+<label for="name" >Name: </label>
+<input type="text" [formControl]="name" >
+<p>{{name.value}}</p>
+<br>
+<label for="name">Feedback: </label>
+<input id="name" type="text" [formControl]="feedback">
+<p>{{feedback.value}}</p>
+<br>
+<button type="button" (click) = 'updateName()'>Submit</button>
